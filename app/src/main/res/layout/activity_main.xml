@@ -81,11 +81,11 @@
                 android:id="@+id/text_doctor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
                 android:gravity="center"
                 android:text="@string/doctor"
-                android:textSize="20sp"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="@color/white" />
+                android:textColor="@color/black"
+                android:textSize="20sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -123,11 +123,11 @@
                 android:id="@+id/text_patient"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
                 android:gravity="center"
                 android:text="@string/patient"
-                android:textSize="20sp"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="@color/white" />
+                android:textColor="@color/black"
+                android:textSize="20sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,15 +12,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BECURE"
         tools:targetApi="31">
+
+        <!-- MainActivity -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- LoginActivity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+
+        <!-- PatientAppointmentsActivity -->
+        <activity
+            android:name=".PatientAppointmentsActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".PatientSelectionActivity"
+            android:exported="true" />
+
+
+        <!-- DoctorAppointmentsActivity -->
+        <activity
+            android:name=".DoctorAppointmentsActivity"
+            android:exported="true" />
+
+        <!-- CreateAppointmentActivity -->
+        <activity
+            android:name=".CreateAppointmentActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>
