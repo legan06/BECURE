@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Patient Name -->
+        <TextView
+            android:id="@+id/text_patient_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            tools:text="Patient Name" />
+
+        <!-- Appointment Date -->
+        <TextView
+            android:id="@+id/text_appointment_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            tools:text="January 1, 2024" />
+
+        <!-- Appointment Time -->
+        <TextView
+            android:id="@+id/text_appointment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/black"
+            tools:text="10:00 AM" />
+
+        <!-- Status (Optional) -->
+        <TextView
+            android:id="@+id/text_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:padding="4dp"
+            android:background="@drawable/status_background"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            tools:visibility="visible"
+            tools:text="Scheduled" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
